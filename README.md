@@ -2,7 +2,7 @@
 
 **Hubot Slack Twitter** allows to post twitt directly from slack. 
 
-By adding the **Hubot Slack Twitter**, you can configure many twitter accounts and bind them to one or more Slack rooms. Then, just ask the robot to tweet.
+By adding the **Hubot Slack Twitter**, you can configure many twitter accounts and bind them to one or more Slack rooms. Then, anybody in the room (even private) can ask the robot to tweet on the dedicated room twitter account.
 
 ## Installation
 
@@ -50,7 +50,17 @@ Now, you can invite your bot in one of the rooms you mentionned in the config, a
 
 ## Sample Interaction
 
+Twitt a link
 ```
 user>> hubot tweet http://tilap.net/
+```
+
+Twitter a link with some description
+```
 user>> hubot tweet http://tilap.net/ a smart french blog about various dev tips
+```
+
+Show the current room twitter account the bot will post on
+```
+user>> hubot tweet infos
 ```
