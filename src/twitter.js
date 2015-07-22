@@ -4,6 +4,7 @@
 // Commands:
 //   hubot tweet <url> - Twitt an url
 //   hubot tweet <url> <description> - Twitt a link with the description
+//   hubot tweet infos - Show the twitter account bound to the current slack room
 
 var fs = require('fs');
 var path = require('path');
@@ -71,9 +72,11 @@ module.exports = function(robot) {
 
     var message = url + ' : ' + comment;
     twitter.post('statuses/update', { status: message }, function(err, data, response) {
+      if(data.user.screen_name) {
         var tweet_url = 'https://twitter.com/' + data.user.screen_name + '/status/' + data.id_str;
-        console.log('[twitter] twitt posted: ' + tweet_url);
-        res.send( 'Great ' + user.name + ', I have put your wonderfull link on twitter! ' + tweet_url );
+      }
+      console.log('[twitter] twitt posted: ' + tweet_url);
+      res.send( 'Great ' + user.name + ', I have put your wonderfull link on twitter! ' + (tweet_url || '') );
     });
   });
 
