@@ -1,0 +1,22 @@
+{
+  "accounts": {
+    "custom-twitter-account-1": {
+      "consumer_key": "xxxxxxxxxxxxxxx",
+      "consumer_secret":"xxxxxxxxxxxxxxx",
+      "access_token": "xxxxxxxxxxxxxxx",
+      "access_token_secret": "xxxxxxxxxxxxxxx"
+    },
+    "custom-twitter-account-1": {
+      "consumer_key": "xxxxxxxxxxxxxxx",
+      "consumer_secret": "xxxxxxxxxxxxxxx",
+      "access_token": "xxxxxxxxxxxxxxx",
+      "access_token_secret": "xxxxxxxxxxxxxxx"
+    }
+  },
+  "rooms": {
+    "roomnameA": "custom-twitter-account-1",
+    "roomnameB": "custom-twitter-account-1",
+    "roomnameC": "custom-twitter-account-1",
+    "username": "custom-twitter-account-2"
+  }
+}

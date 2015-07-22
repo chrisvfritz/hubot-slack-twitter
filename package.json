@@ -1,0 +1,33 @@
+{
+  "name": "hubot-slack-twitter",
+  "version": "0.1.0",
+  "description": "A robot to send twitts from slack",
+  "homepage": "https://github.com/tilap/hubot-slack-twitter",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tilap/hubot-slack-twitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tilap/hubot-slack-twitter/issues"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "slack",
+    "hubot-slack",
+    "twitter"
+  ],
+  "main": "index.coffee",
+  "author": "Julien Tilap LA VINH <jlavinh@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "twit": "2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
