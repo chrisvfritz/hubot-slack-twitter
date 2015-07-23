@@ -102,7 +102,7 @@ module.exports = function(robot) {
       return;
     }
 
-    var message = url + ' : ' + comment;
+    var message = comment + ' ' + url;
     twitter.post('statuses/update', { status: message }, function(err, data, response) {
       var tweet_url;
       if(data.user.screen_name) {
