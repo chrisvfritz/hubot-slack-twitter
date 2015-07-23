@@ -141,7 +141,7 @@ module.exports = function(robot) {
     var logs = getLogs();
 
     // Stats of a user when in it own room
-    if(false && user.name === room) {
+    if(user.name === room) {
       res.send('Your stats for tweeting :');
 
       var roomsStats = {};
