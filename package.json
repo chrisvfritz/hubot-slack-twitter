@@ -1,6 +1,6 @@
 {
   "name": "hubot-slack-twitter",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A robot to send twitts from slack",
   "homepage": "https://github.com/tilap/hubot-slack-twitter",
   "repository": {
