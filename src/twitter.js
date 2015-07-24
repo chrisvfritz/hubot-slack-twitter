@@ -44,7 +44,7 @@ module.exports = function(robot) {
 
     twitter.post('statuses/update', { status: message }, function(err, data, response) {
       var tweet_url;
-      if(data.user.screen_name) {
+      if(data.user && data.user.screen_name) {
          tweet_url= 'https://twitter.com/' + data.user.screen_name + '/status/' + data.id_str;
       }
       console.log('[twitter] twitt posted: ' + (tweet_url || ' no info to display'));
