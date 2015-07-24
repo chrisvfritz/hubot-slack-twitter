@@ -67,7 +67,10 @@ Show the current room twitter account the bot will post on
 user>> hubot tweet infos
 ```
 
-Show use statistics
+Show statistics
 ```
-user>> hubot show stats
+user>> hubot tweet stats
 ```
+The response will be different:
+- in a direct message with the bot, this will display user stats (cross channel and accounts usage)
+- in a chan with a tweeter bot set up, it will display the chan stats with users contribution ranking
