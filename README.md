@@ -1,10 +1,13 @@
-# Hubot Slack Twitter
+Hubot Slack Twitter [![NPM version][npm-image]][npm-url]
+============================
 
 **Hubot Slack Twitter** allows to post twitt directly from slack. 
 
 By adding the **Hubot Slack Twitter**, you can configure many twitter accounts and bind them to one or more Slack rooms. Then, anybody in the room (even private) can ask the robot to tweet on the dedicated room twitter account.
 
 Moreover, a basic stats report is available by chan / in DM to promote people who tweet the most with **Hubot Slack Twitter**.
+
+![](https://github.com/tilap/hubot-slack-twitter/blob/master/hubot-slack-twitter_screen.gif)
 
 ## Installation
 
@@ -74,3 +77,6 @@ user>> hubot tweet stats
 The response will be different:
 - in a direct message with the bot, this will display user stats (cross channel and accounts usage)
 - in a chan with a tweeter bot set up, it will display the chan stats with users contribution ranking
+
+[npm-image]: https://img.shields.io/npm/v/hubot-slack-twitter.svg?style=flat
+[npm-url]: https://npmjs.org/package/hubot-slack-twitter
