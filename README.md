@@ -7,7 +7,13 @@ By adding the **Hubot Slack Twitter**, you can configure many twitter accounts a
 
 Moreover, a basic stats report is available by chan / in DM to promote people who tweet the most with **Hubot Slack Twitter**.
 
+- - -
+
 ![](https://github.com/tilap/hubot-slack-twitter/blob/master/hubot-slack-twitter_screen.gif)
+
+- - -
+
+All versions details are available on the [CHANGELOG](https://github.com/tilap/hubot-slack-twitter/blob/master/CHANGELOG.md).
 
 ## Installation
 
@@ -20,6 +26,8 @@ Then add **hubot-slack-twitter** to your `external-scripts.json`:
 ```json
 ["hubot-slack-twitter"]
 ```
+
+_If you already have the "hubot-help" script, the Hubot Slack Twitter documentation will be happened to the help response_
 
 ## Configure
 
@@ -53,27 +61,36 @@ Create a `twitter-config.js` at the root of your hubot directory and fill it wit
 
 Now, you can invite your bot in one of the rooms you mentionned in the config, and send a twitt (see example below).
 
-## Sample Interaction
+## Examples
 
-Twitt a link
+### Post Twitts
+
+**Simple link tweet**
+
 ```
 user>> hubot tweet http://tilap.net/
 ```
 
-Twitter a link with some description
+**A link with some description tweet**
 ```
 user>> hubot tweet http://tilap.net/ a smart french blog about various dev tips
 ```
+
+### Bot Infos
 
 Show the current room twitter account the bot will post on
 ```
 user>> hubot tweet infos
 ```
 
+### Statistics
+
 Show statistics
+
 ```
 user>> hubot tweet stats
 ```
+
 The response will be different:
 - in a direct message with the bot, this will display user stats (cross channel and accounts usage)
 - in a chan with a tweeter bot set up, it will display the chan stats with users contribution ranking
