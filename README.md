@@ -1,4 +1,4 @@
-Hubot Slack Twitter [![NPM version][npm-image]][npm-url]
+Hubot Slack Twitter [![NPM version][npm-image]][npm-url] [![Github issues][github-issues-image]][github-issues-url] [![Github license][github-license-image]][github-license-url]
 ============================
 
 **Hubot Slack Twitter** allows to post twitt directly from slack. 
@@ -13,7 +13,7 @@ Moreover, a basic stats report is available by chan / in DM to promote people wh
 
 - - -
 
-All versions details are available on the [CHANGELOG](https://github.com/tilap/hubot-slack-twitter/blob/master/CHANGELOG.md).
+See [changelog](https://github.com/tilap/hubot-slack-twitter/blob/master/CHANGELOG.md) for releases infos.
 
 ## Installation
 
@@ -97,3 +97,7 @@ The response will be different:
 
 [npm-image]: https://img.shields.io/npm/v/hubot-slack-twitter.svg?style=flat
 [npm-url]: https://npmjs.org/package/hubot-slack-twitter
+[github-issues-image]: https://img.shields.io/github/issues/tilap/hubot-slack-twitter.svg
+[github-issues-url]: https://github.com/tilap/hubot-slack-twitter/issues
+[github-license-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[github-license-url]: https://github.com/tilap/hubot-slack-twitter/blob/master/LICENSE
