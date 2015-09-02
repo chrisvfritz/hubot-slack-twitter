@@ -8,7 +8,7 @@ var path = require('path');
 
 module.exports = {
   getStorageFile: function(name, defaultContent) {
-    defaultContent = defaultContent || {
+    return {
       "accounts": {
         "lansingcodes": {
           "consumer_key": process.env.TWITTER_LANSINGCODES_CONSUMER_KEY,
@@ -21,8 +21,6 @@ module.exports = {
         "twitter": "lansingcodes"
       }
     };
-    var pth = path.resolve(__dirname, './../../../' + filePrefix + name + '.json');
-    return (fs.existsSync(pth) ? require(pth) : defaultContent);
   },
 
   saveStorageFile: function(name, data) {
